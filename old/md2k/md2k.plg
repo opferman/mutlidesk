@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: md2k - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/md2k.res" /d "_DEBUG" "C:\programs\md2k\md2k.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPD0F0.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/md2k.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\programs\md2k\Md2k.c"
+"C:\programs\md2k\worker.c"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPD0F0.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPD0F1.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/md2k.pdb" /debug /machine:I386 /out:"Debug/md2k.exe" /pdbtype:sept 
+.\Debug\Md2k.obj
+.\Debug\worker.obj
+.\Debug\md2k.res
+"..\..\Program Files\Microsoft Visual Studio\Vc98\Lib\Comctl32.lib"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPD0F1.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Md2k.c
+worker.c
+Linking...
+
+
+
+<h3>Results</h3>
+md2k.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

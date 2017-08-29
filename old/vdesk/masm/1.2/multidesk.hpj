@@ -1,0 +1,15 @@
+[OPTIONS]
+HCW=0
+COMPRESS=12 Hall Zeck
+TITLE=title of this help project
+COPYRIGHT=© 1998 ... your company
+DEFFONT=MS Sans Serif,8,0
+CHARSET=1
+LCID=0x0409
+FTS=1
+CNT=.\multidesk.cnt
+HLP=.\multidesk.hlp
+[FILES]
+.\multidesk.rtf
+[WINDOWS]
+Main="Main window",(530,29,758,1143),27904,(255,255,255),(192,192,192),f3

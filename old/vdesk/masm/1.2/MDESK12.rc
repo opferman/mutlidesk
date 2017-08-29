@@ -1,0 +1,40 @@
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*
+   Toby Opferman
+   MultiDesk Resource File
+   http://www.opferman.com
+   toby@opferman.com
+   _Secret/Scrat
+   Copyright 2000
+
+  *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+ #define WIN32_LEAN_AND_MEAN
+ #include <windows.h>
+
+ #define DeskIcon1 101
+ #define DeskIcon2 102
+ #define DeskIcon3 103
+ #define DeskIcon4 104
+
+ A          ICON a.ico
+ DeskIcon1  ICON desk1.ico
+ DeskIcon2  ICON desk2.ico
+ DeskIcon3  ICON desk3.ico
+ DeskIcon4  ICON desk4.ico
+
+ Zbout1    ICON zbout1.ico
+
+
+ AboutBox DIALOG 10, 10, 160, 100
+    STYLE WS_POPUP | WS_DLGFRAME
+    {
+       CTEXT "About"                            -1, 0, 5, 160, 8
+       ICON "Zbout1"                             -1, 73, 12, 48, 48
+       CTEXT "MultiDesk v1.2a"             -1, 0, 28, 160, 8
+       CTEXT "Toby Opferman Copyright 2000"     -1, 0, 38, 160, 8
+       CTEXT "http://www.opferman.com" -1, 0, 48, 160, 8
+       CTEXT "Written in Assembly"             -1, 0, 58, 160, 8
+       DEFPUSHBUTTON "OK!"                    IDOK, 64, 80, 32, 14, WS_GROUP
+    }
+
+
+

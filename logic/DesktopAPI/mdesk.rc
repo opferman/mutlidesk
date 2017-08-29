@@ -1,0 +1,52 @@
+/***************************************************************************** 
+ *                            MultiDesk 2001                                 *
+ *                                                                           *
+ *                                                                           *
+ * This file is for educational purposes only.  This file is not for         *
+ * commerical use. There is no warrenty, implied or otherwise.               *
+ *                                                                           *
+ * toby@opferman.com                                                         *
+ *                                                                           *
+ * By Toby Opferman                                                          *
+ *                                                                           *
+ *    Copyright (c)2001, All Rights Reserved                                 *
+ *****************************************************************************/
+ 
+ 
+#include <windows.h>
+
+#define IDC_MAIN_ICON  1
+
+IDC_MAIN_ICON          ICON "a.ico"
+
+
+        
+1 VERSIONINFO
+FILEVERSION 1, 0, 0, 0
+PRODUCTVERSION 1, 0, 0, 0
+FILEOS 0x00000004L // comment: VOS_WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "040904E4"
+  {
+   VALUE "CompanyName", "Toby Opferman\000\000"
+   VALUE "FileDescription", "Multidesk Engine\000"
+   VALUE "FileVersion", "1.00\000\000"
+   VALUE "InternalName", "MultiDesk 2001 Engine API\000"
+   VALUE "LegalCopyright", "Copyright © Toby Opferman, 1999-2001\000\000"
+   VALUE "OriginalFilename", "mdesk.dll\000"
+  }
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 0x409, 1252
+ }
+}
+ 
+ 
+
+
+

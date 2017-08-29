@@ -1,0 +1,108 @@
+/***************************************************************************** 
+ *                            MultiDesk 2001                                 *
+ *                                                                           *
+ *                                                                           *
+ * This file is for educational purposes only.  This file is not for         *
+ * commerical use. There is no warrenty, implied or otherwise.               *
+ *                                                                           *
+ * toby@opferman.com                                                         *
+ *                                                                           *
+ * By Toby Opferman                                                          *
+ *                                                                           *
+ *    Copyright (c)2001, All Rights Reserved                                 *
+ *****************************************************************************/
+ 
+ 
+#include <windows.h>
+#include "mdres.h"
+
+IDC_MAIN_ICON          ICON "a.ico"
+IDC_DESKTOPONE_ICON    ICON "desk1.ico"
+IDC_DESKTOPTWO_ICON    ICON "desk2.ico"
+IDC_DESKTOPTHREE_ICON  ICON "desk3.ico"
+IDC_DESKTOPFOUR_ICON   ICON "desk4.ico"
+IDC_DESKTOPFIVE_ICON   ICON "desk5.ico"
+IDC_DESKTOPSIX_ICON    ICON "desk6.ico"
+IDC_DESKTOPSEVEN_ICON  ICON "desk7.ico"
+IDC_DESKTOPEIGHT_ICON  ICON "desk8.ico"
+IDC_PICTURE_ICON       ICON "zbout1.ico"
+
+
+IDC_SYSTRAY_MENU_DUMMY  MENU 
+BEGIN
+      POPUP "&ummy Value"
+      BEGIN
+          MENUITEM "Safe Mode",      IDC_SAFE_MODE
+          MENUITEM SEPARATOR
+          MENUITEM "Desktop One",    IDC_DT_ONE
+          MENUITEM "Desktop Two",    IDC_DT_TWO
+          MENUITEM "Desktop Three",  IDC_DT_THREE
+          MENUITEM "Desktop Four",   IDC_DT_FOUR
+          MENUITEM "Desktop Five",   IDC_DT_FIVE
+          MENUITEM "Desktop Six",    IDC_DT_SIX
+          MENUITEM "Desktop Seven",  IDC_DT_SEVEN
+          MENUITEM "Desktop Eight",  IDC_DT_EIGHT         
+          MENUITEM SEPARATOR
+          MENUITEM "Clear Universal Windows", IDC_UNI_CLEAR
+          MENUITEM "Help",           IDC_MDHELP
+          MENUITEM "About",          IDC_ABOUT
+          MENUITEM SEPARATOR
+          MENUITEM "Exit",           IDC_EXIT
+         
+      END
+END
+
+
+IDD_ABOUTBOX DIALOG 10, 10, 160, 100
+STYLE WS_POPUP | WS_DLGFRAME
+{
+       CTEXT "About"                            -1, 0, 5, 160, 8
+       ICON IDC_PICTURE_ICON                    -1, 73, 12, 48, 48
+       CTEXT "MultiDesk 2001 Alpha 1.0"         -1, 0, 28, 160, 8
+       CTEXT "Toby Opferman Copyright 2001"     -1, 0, 38, 160, 8
+       CTEXT "http://www.opferman.com"          -1, 0, 48, 160, 8
+       CTEXT "Written in C"                     -1, 0, 58, 160, 8
+       DEFPUSHBUTTON "OK!"                      IDOK, 64, 80, 32, 14, WS_GROUP
+}
+
+
+STRINGTABLE
+BEGIN
+ MDUI_HK_ERROR       "HotKey Error"
+ HK_UNI_ADD_ERROR    "Error registering Universal Application Hotkey." 
+ HK_UNI_SUB_ERROR    "Error registering Universal Application Hotkey."
+ HK_SDDOWN_ERROR     "Error registering Desktop Scrolling Hotkey."
+ HK_SDUP_ERROR       "Error registering Desktop Scrolling Hotkey."
+ SYSTEM_TRAY_TOOLTIP "Multidesk 2001 Version 1.0 Alpha" 
+ IDS_EXIT_TITLE      "Multidesk 2001"
+ IDS_EXIT_QUESTION   "Exit Multidesk 2001?"
+END
+
+
+
+1 VERSIONINFO
+FILEVERSION 1, 0, 0, 0
+PRODUCTVERSION 1, 0, 0, 0
+FILEOS 0x00000004L // comment: VOS_WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "040904E4"
+  {
+   VALUE "CompanyName", "Toby Opferman\000\000"
+   VALUE "FileDescription", "Multidesk 2001\000"
+   VALUE "FileVersion", "1.00\000\000"
+   VALUE "InternalName", "MultiDesk 2001 GUI Front End (Example)\000"
+   VALUE "LegalCopyright", "Copyright © Toby Opferman, 1999-2001\000\000"
+   VALUE "OriginalFilename", "md2001.exe\000"
+  }
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 0x409, 1252
+ }
+}
+ 
+ 

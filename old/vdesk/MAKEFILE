@@ -1,0 +1,31 @@
+#   Make file for Turbo Assembler WAP32 example.
+#   Copyright (c) 1996 by Borland International, Inc.
+
+#       make -B                 Will build wap32.exe
+#       make -B -DDEBUG         Will build the debug version of wap32.exe
+
+NAME = MDESK
+OBJS = $(NAME).obj
+DEF  = $(NAME).def
+RES  = $(NAME).res
+
+!if $d(DEBUG)
+TASMDEBUG=/zi
+LINKDEBUG=/v
+!else
+TASMDEBUG=
+LINKDEBUG=
+!endif
+
+!if $d(MAKEDIR)
+IMPORT=$(MAKEDIR)\..\lib\import32
+!else
+IMPORT=import32
+!endif
+
+
+$(NAME).DLL: $(OBJS) $(DEF)
+  tlink32 /Tpe /aa /c $(LINKDEBUG) $(OBJS),$(NAME),, $(IMPORT), $(DEF), $(RES)
+
+.asm.obj:
+   tasm32 $(TASMDEBUG) /ml $&.asm

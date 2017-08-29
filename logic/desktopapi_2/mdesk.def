@@ -1,0 +1,15 @@
+LIBRARY "MDESK"
+
+EXPORTS
+ MDesk_CreateDesktops
+ MDesk_SetFlags
+ MDesk_GetFlags
+ MDesk_GetCurrentDesktop
+ MDesk_GetNumberOfDesktops
+ MDesk_GoToDesktop
+ MDesk_SwitchDesktopForward
+ MDesk_SwitchDesktopBackward
+ MDesk_DestroyDesktop
+ MDesk_DestroyAllUniversalWindows
+ MDesk_AddUniversalWindow
+ MDesk_RemoveUniversalWindow
