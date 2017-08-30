@@ -25,7 +25,7 @@ typedef struct __queue_type__ {
 } QUEUE, *PQUEUE;
 
 /* Prototypes */
- DWORD UseQueue(DWORD, DWORD);
+ DWORD UseQueue(DWORD, DWORD); 
 
 #endif
 

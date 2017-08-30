@@ -24,7 +24,7 @@ extern "C" {
 
 
 
-typedef struct __mdeskui__struct__ {
+typedef struct __mdeskui__struct__ { 
         
         HINSTANCE hInstance;
         HMDESK hMdesk;

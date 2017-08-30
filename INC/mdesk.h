@@ -43,7 +43,7 @@ BOOL WINAPI MDesk_AddUniversalWindow(HMDESK hMdesk, HWND hWnd);
 void WINAPI MDesk_RemoveUniversalWindow(HMDESK hMdesk, HWND hWnd);
 
 
-#ifdef __cplusplus
+#ifdef __cplusplus 
 }
 #endif
 

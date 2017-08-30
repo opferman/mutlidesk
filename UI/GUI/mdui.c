@@ -1045,3 +1045,4 @@ void MDUI_HandleAboutBoxCommands(HWND hWnd, UINT Cmd)
              break;
    }
 }
+ 

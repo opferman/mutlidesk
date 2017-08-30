@@ -848,7 +848,7 @@ void WINAPI MDesk_RemoveUniversalWindow(HMDESK hMdesk, HWND hWnd)
           else
           {
              if(pUniversalWindowWalker->pNext)
-                pUniversalWindowWalker->pNext->pBefore = NULL;
+                pUniversalWindowWalker->pNext->pBefore = NULL; 
                 
               pMdesk->pUniversalWindows = pUniversalWindowWalker->pNext;
               
